@@ -65,7 +65,7 @@ menu()
 
 # Introducimos un nuevo digito convertido en 8x8 y cambiamos el valor de sus pixeles para que se pueda identificar mejor el digito.
 
-img = cv2.imread("5.png", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("images/5.png", cv2.IMREAD_GRAYSCALE)
 resized_image = cv2.resize(img, (8, 8))
 trimmed_image = np.array(resized_image)
 
@@ -73,12 +73,12 @@ trimmed_image = np.array(resized_image)
 print("Dibujo de la imagen original, "                               #
       "casi identica a la foto tomada, para comparar visualmente:")  #
 print()                                                              #
-ruta_de_foto = "5.png"                                               #
+ruta_de_foto = "images/5.png"                                        #
 imagen = Image.open(ruta_de_foto)                                    #
 imagen_resized = imagen.resize((35, 8))                              #
 imagen_gris = imagen_resized.convert('L')                            #
 pixels = list(imagen_gris.getdata())                                 #
-width, height = imagen_gris.size                                     #   #--> Representacion de la foto en el terminal dibujada con los simbolos en "caracteres"
+width, height = imagen_gris.size                                     #   #--> Representacion de la foto en el terminal dibujada con los simbolos en caracteres
 caracteres = [' ', '.', ':', '-', '=', '+', '*', '#', '%', '@']      #
                                                                      #
 for i in range(height):                                              #
