@@ -107,7 +107,6 @@ print(trimmed_image)
 print()
 
 # Encontramos los 3 digitos mas parecidos a la imagen.
-
 new_digit_array = trimmed_image.flatten()
 distancia = []
 

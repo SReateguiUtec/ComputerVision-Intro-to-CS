@@ -1,6 +1,6 @@
 # Computer Vision Digit Recognition Project
 
-This project implements a digit recognition system that uses machine learning to identify handwritten digits from images. The system compares input images against the sklearn digits dataset to find the most similar digits.
+This project implements a digit recognition system that identifies handwritten digits from images by calculating Euclidean distances. The system compares input images against the sklearn digits dataset to find the most similar digits.
 
 ## Features
 
